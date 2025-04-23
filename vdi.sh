@@ -22,7 +22,7 @@ RCLONE_PARAMS='-L --exclude "snap**" --exclude ".ppd**" --include ".config**" --
 rclone copy $REMOTE_NAME:$REMOTE_DIRECTORY $HOME_DIRECTORY $RCLONE_PARAMS
 
 
-exit
+sudo su -
 
 echo \* \* \* \* \* $USERNAME /bin/rclone sync $HOME_DIRECOTRY $REMOTE_NAME:$REMOTE_DIRECTORY  $RCLONE_PARAMS >> /etc/crontab
 
